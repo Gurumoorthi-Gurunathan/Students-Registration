@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <div id= title>
+    <h2 class="form-title">Student Registration Form </h2>
+    <h5 class="form-subtitle">(* is madatory field)</h5>
+    </div>
+
+    <div class="container">
+
+    <form class="form" action="">
+
+        <div class="form-group">
+            <label for="fullname">Full Name <b>*</b></label> 
+            <input type="text" id="fullname" placeholder="Full Name"> 
+        </div>
+        
+
+        <div class="form-group">
+            <label for="email">Email<b>*</b></label> 
+            <input type="email" id="email" placeholder="Email"> 
+        </div>
+
+        <div class="form-group">
+            <label for="pno">Phone Number<b>*</b></label> 
+            <input type="tel" id="pno" placeholder="Phone Number"> 
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password<b>*</b></label> 
+            <input type="password" id="password" placeholder="Password">
+        </div>
+
+        <div class="form-group">
+        <label for="conpass">Confirm Password<b>*</b></label> 
+        <input type="password" id="conpass" placeholder="Confirm password"> 
+        </div>
+
+        <div class="form-group">
+        <label for="dob">Date of Birth<b>*</b></label> 
+        <input type="date" id="dob" placeholder="DOB"> 
+        </div>
+
+        <div class="form-group">
+        <label>Gender<b>*</b></label> <br>
+
+        <div class="radio-group">
+
+        <input type="radio" id="male" name="Gender" value="Male">   
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="Gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="Gender" value="others">
+        <label for="other">Other</label>
+        
+        </div>
+
+        </div>
+
+        <div class="form-group">
+
+        <label for="skills">Skills<b>*</b></label> <br>
+
+        <div class="skills-group">
+        <input type="checkbox" id="html" name="skills" value="HTML"> <label for="html">HTML</label> 
+        <input type="checkbox" id="css" name="skills" value="CSS"> <label for="css">CSS</label> 
+        <input type="checkbox" id="js" name="skills" value="JS"> <label for="js">JS</label> 
+        <input type="checkbox" id="react" name="skills" value="React"> <label for="react">React</label> 
+        <input type="checkbox" id="node" name="skills" value="Node.js"> <label for="node">Node.js</label> 
+
+        </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+        <label for="education">Education<b>*</b></label> <br>
+        
+        <select name="education" id="education">
+            <option value="BSc Computer Science">B.Sc</option>
+            <option value="BCA">BCA</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="MCA">MCA</option>
+            <option value="Other">other</option>
+        </select> 
+
+        </div>
+
+        <div class="form-group">
+        <label for="textarea">Address<b>*</b></label> 
+        <textarea name="textarea" id="textarea" placeholder="Enter Your Address"></textarea>
+        </div>
+
+        
+        <div class="form-group">
+        <label for="file">Profile Image</label>
+        <input type="file" id="file" accept="image/*">
+
+        <br><br>
+
+        <img id="preview" width="120">
+        </div>
+        
+        <div class="form-group">
+            <div class="form-group-tc">
+                <input type="checkbox" id="terms"> <label for="terms">Teams and Conditions<b>*</b></label>
+            </div> 
+        </div>
+
+        <div class="button-group">
+        <button type="submit">Submit</button>  
+        <button type="reset">Clear Form</button>
+        </div>
+
+    </form>
+
+    </div>
+
+
+    <div id="studentdata"></div>
+
+</body>
+</html>
