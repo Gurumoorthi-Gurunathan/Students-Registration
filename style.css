@@ -140,7 +140,7 @@ body{
 }
 .frontpage-background{
     background-color: aliceblue;
-    background-image: url(./frontpage-img.webp);
+    background-image: url(frontpage-img.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
